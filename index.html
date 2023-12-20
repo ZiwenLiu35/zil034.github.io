@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Add a link to Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Ziwen Liu - Portfolio</title>
+</head>
+<body>
+    <div id="lightning-overlay"></div>
+
+    <script>
+        // JavaScript for the lightning effect
+        function playLightningEffect() {
+            const overlay = document.getElementById('lightning-overlay');
+
+            // Display the overlay
+            overlay.style.display = 'block';
+
+            // Set a timeout to hide the overlay after the lightning effect
+            setTimeout(() => {
+                overlay.style.display = 'none';
+            }, 500); // Adjust the duration as needed
+        }
+
+        // Trigger the lightning effect after a delay (e.g., when the page loads)
+        setInterval(playLightningEffect, 10000);
+    </script>
+
+    <header>
+        <!-- Add your image here -->
+        <img src="image/download.png" alt="Ziwen Liu">
+        <h1>Ziwen Liu</h1>
+        <p>Software Engineer</p>
+        
+        <!-- Add social icons -->
+        <div class="social-icons">
+            <a href="https://www.instagram.com/ziwenliu4real" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://github.com/ZiwenLiu35" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="mailto:ZiwenLiu35@outlook.com"><i class="far fa-envelope"></i></a>
+            <!-- Add more social icons as needed -->
+        </div>
+    </header>
+
+    <section id="about">
+        <!-- Add your image here with a smaller size -->
+        <img src="image/diamond.png" alt="About Me Image" class="section-image">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <p class="intro-paragraph">I am a senior at UCSD with a strong background in software engineering and computer science. Proficient in Java, C++, and adept at algorithm design, my expertise extends to computer graphics, rendering, and light shader development. I am well-versed in utilizing the OpenGL 3D API for creating immersive visual experiences. Additionally, I have experience with MongoDB database management. Passionate about pushing the boundaries of technology, I am committed to contributing innovative solutions to the field.</p>
+            <p class ="resume"><a href="cog3Resume.pdf" target="_blank">View Resume</a></p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="projects-background">
+            <!-- Add your project content here -->
+            <h2>Projects</h2>
+            <div class="project">
+                <!-- Add project images with smaller sizes -->
+
+                <div class="project-content">
+                    <h3>AudioGPT</h3>
+                    <p>In this project, we aim to develop a robust Java-based graphical user interface (GUI) that incorporates voice input functionalities for seamless user interaction. The system will allow users to ask questions, delete queries, and even initiate email commands through voice commands.</p>
+                    <a href="https://github.com/ucsd-cse110-sp23/cse-110-project-team-10" style="color: #ffffff;">View Project</a>
+                </div>
+            </div>
+
+            <div class="project">
+                <!-- Add project images with smaller sizes -->
+
+                <div class="project-content">
+                    <h3>Large Model training Optimization</h3>
+                    <p>This project focuses on optimizing the training of Clip models within Artificial Intelligence and Graphics Computing (AIGC) systems by manipulating key parameters. The primary goal is to retain high throughput while minimizing GPU memory costs. The research involved the exploration of various techniques, resulting in a 35.4% reduction in GPU memory costs through the implementation of ZeRO. This optimization was achieved while simultaneously increasing throughput by 2.09 units of data samples. Key strategies include manual adjustments to batch size and enabling communication overlap.</p>
+                    <a href="https://github.com/microsoft/DeepSpeed" style="color: #ffffff;">View Project</a>
+                </div>
+            </div>
+            <!-- Add more projects as needed -->
+        </div>
+    </section>
+
+    <section id="contact">
+        <img src="image/book.png" alt="About Me Image" class="section-image">
+        <h2 >Contact</h2>
+        <p class="intro-paragraph">Email: ZiwenLiu35@outlook.com</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Ziwen Liu. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
